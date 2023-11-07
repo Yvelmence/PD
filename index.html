@@ -8,28 +8,30 @@
 
 <body>
 
-    <div class="first_main">
+    <button onclick="location.href='#top'" id="scrollToTop" title="Scroll To Top">Scroll To Top</button>
+
+    <div class="first_main" id="top">
         <nav>
             <h2 class="logo">Portfolio</h2>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#top">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="content">
+    <div class="content" id="content">
         <h4>Hello, my name is</h4>
         <h1><span>T</span>eng <span>K</span>iat</h1>
         <h3>I am a designer and a developer</h3>
     </div>
 
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about_main">
-            <img src="img/Sena_29_2022.webp">
+            <img src="img/james-person-1.jpg">
             <div class="about-text">
                 <h2>about me</h2>
                 <h4><span>Developer</span> and <span>Designer</span> by day</h3>
@@ -42,26 +44,50 @@
 
 
     <section>
-        <div class="portfolio">
-            <div class="title">
+        <div class="portfolio" id="portfolio">
+            <div class="p-title">
                 <h2>My Portfolio</h2>
             </div>
-            <div class="box">
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h5>Development</h5>
-                    <div class="para">
-                        <p>Here you will see my development work</p>
-                        <p style="text-align: center;"><a class="button" href="#">Click Here</a></p>
-                    </div>
+            <div class="portfolio-main">
+                <img src="img/Screenshot 2023-11-06 201433.png">
+                <div class="about-text">
+                    <h4>My Portfolio Website</h4>
+                    <p>This website is my latest work that I made using HTML and CSS</p>
                 </div>
-                <div class="card">
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <h5>Design</h5>
-                    <div class="para">
-                        <p>Here you will see my Design work</p>
-                        <p style="text-align: center;"><a class="button" href="#">Click Here</a></p>
-                    </div>
+            </div>
+            <div class="portfolio-main">
+                <img src="img/Screenshot 2023-11-06 201150.png">
+                <div class="about-text">
+                    <h4>Guitar Website</h4>
+                    <p>
+                        My first ever full prototype made in Adobe XD</p>
+                        <a href="   
+                        https://xd.adobe.com/view/f0661fe5-44a2-40bf-b862-dc77bdf7d849-a535/">See more</a>
+                </div>
+            </div>
+            <div class="portfolio-main">
+                <img src="img/Screenshot 2023-11-06 200702.png">
+                <div class="about-text">
+                    <h4>My Portfolio App</h4>
+                    <p>Mobile Prototype of my portfolio app that I made earlier on in my design journey with Adobe XD. You can see the change in my approach in design over time.</p>
+                    <a href="https://xd.adobe.com/view/58d82bc4-6f30-4054-912c-fc5781b5d756-0d8b/">See more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact" id="contact">
+            <div class="c-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-box">
+                <div class="form">
+                    <form action="https://formsubmit.co/el/sayelu" method="POST">
+                        <input type="text" class="input-email" name="email" placeholder="Your Email" required>
+                        <textarea class="input-message" name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
